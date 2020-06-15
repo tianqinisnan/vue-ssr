@@ -11,6 +11,6 @@
 - vue-loader / vue-template-compiler / vue-style-loader / css-loader
 - babel-loader / @babel/core / @babel/preset-env / html-webpack-plugin
 
-3. `nodemon server.js` 启动后端服务器，监听3000端口
+3. `npm run all` 启动前端打包服务，并监听修改 --watch
 
-4. `npm run all` 启动前端打包服务，并监听修改 --watch
+4. `nodemon server.js` 启动后端服务器，监听3000端口

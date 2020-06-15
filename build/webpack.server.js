@@ -15,11 +15,11 @@ module.exports = merge(base, {
   },
   target: 'node',
   plugins: [
+    new VueSSRServerPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../public/index-ssr.html'),
       filename: 'index-ssr.html',
       excludeChunks: ['server']   // 因为服务端的 html 需要引入的是客户端的js，所以这里不需要默认引入服务端的js
-    }),
-    new VueSSRServerPlugin()
+    })
   ]
 })
